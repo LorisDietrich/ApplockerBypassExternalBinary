@@ -24,12 +24,13 @@ GOOS=windows go build -o agent.exe cmd/agent/main.go
 ```
 
 ## 2. Prepare ApplockerBypassExternalBinary
-To compile and encode your C# project for use:
+### Step 1: Add required reference
+Add the System.Configuration.Install reference to the project.
 
-### Step 1: Compile the project
+### Step 2: Compile the project
 Ensure the project is compiled as **Release** and **x64** for compatibility.
 
-### Step 2: Encode the executable with certutil
+### Step 3: Encode the executable with certutil
 Use certutil to convert the .exe to Base64, allowing for easier transfer:
 ```
 certutil -encode .\ApplockerBypassExternalBinary.exe AppLockerBypassLigolo.txt
